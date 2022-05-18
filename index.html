@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devplace API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="container-fluid" id=main-container>
+        <h1> Devplace API, de dev, para dev!</h1>
+        <h4>Conheça projetos</h4>
+        <form action="input" method="post" name="register" id="form">
+            <div class="mb-3">
+                <label for="token" class="form-label"></label>
+                <input type="text" class="form-control" id="token" placeholder="Bearer token" data-min-length="5">
+                <input type="submit" id="btn-submit" value="Liste projetos">
+            </div>
+        </form>
+        <p id="response">Últimos:</p>
+        <span>
+            <span>
+                <a class="list-group-item list-group-item-action" href="./auth.html">Faça Login</a>
+            </span>
+            <span>
+                <a class="list-group-item list-group-item-action" href="./register.html">Cadastre-se</a>
+            </span>
+            <span>
+                <a class="list-group-item list-group-item-action" href="./userProjects.html">Liste seus projetos</a>
+            </span>
+            <span>
+                <a class="list-group-item list-group-item-action" href="./createProject.html">Cadastre um projeto</a>
+            </span>
+            <span>
+                <a class="list-group-item list-group-item-action" href="./update.html">Atualize um projeto</a>
+            </span>
+        </span>
+        <a href="http://github.com/MatheusAltino/devplace">Github</a>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
